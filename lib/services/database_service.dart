@@ -4,7 +4,9 @@ import 'package:sqflite/sqflite.dart';
 import 'package:sqflite/sqlite_api.dart';
 
 // Platform detection
-import 'dart:io' show Platform;
+// import 'dart:io' show Platform;
+
+import 'package:universal_io/io.dart'; // Works on web + native
 
 // FFI import at the TOP - conditional based on platform
 import 'package:sqflite_common_ffi/sqflite_ffi.dart' as ffi;
