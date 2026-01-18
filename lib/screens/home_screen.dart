@@ -43,6 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.all(16),
             child: SearchBar(
+              leading: Icon(Icons.search),
+              hintText: "Search notes...",
               controller: _searchController,
               onChanged: (value) {
                 setState(() {
